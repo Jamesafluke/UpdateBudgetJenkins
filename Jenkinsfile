@@ -10,7 +10,7 @@ pipeline{
         }
         stage('unitTests'){
             steps{
-                sh "echo unitTests time"
+                sh hello.sh
             }
         }
 

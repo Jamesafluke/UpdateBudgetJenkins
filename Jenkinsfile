@@ -10,6 +10,7 @@ pipeline{
         }
         stage('unitTests'){
             steps{
+                sh "echo 'this is the unit tests stage'"
                 sh pwd
                 sh pwd
             }

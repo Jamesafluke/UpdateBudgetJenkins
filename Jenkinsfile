@@ -3,7 +3,8 @@ pipeline{
     stages{
         stage("checkout"){
             steps{
-                checkout scm
+                // checkout scm
+                git branch: 'main', url: 'https://github.com/Jamesafluke/UpdateBudget2.git'
                 // checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfig: [[url: 'https://github.com/jamesafluke/UpdateBudget2.git']])
             }
         }

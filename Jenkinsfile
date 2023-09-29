@@ -10,7 +10,7 @@ pipeline{
         }
         stage('unitTests'){
             steps{
-                sh "chmod +x -R ${env.WORKSPACE}"
+                sh "chmod +x -R ${env.WORKSPACE}@tmp"
                 sh "echo 'this is the unit tests stage'"
                 sh pwd
                 sh pwd

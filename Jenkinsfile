@@ -10,6 +10,7 @@ pipeline{
         }
         stage('unitTests'){
             steps{
+                sh "whoami"
                 sh "chmod +x -R ${env.WORKSPACE}@tmp"
                 sh "echo 'this is the unit tests stage'"
                 sh pwd

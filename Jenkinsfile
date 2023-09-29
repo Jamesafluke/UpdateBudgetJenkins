@@ -10,7 +10,7 @@ pipeline{
         }
         stage('unitTests'){
             steps{
-                sh hello.sh
+                sh pwd
             }
         }
 

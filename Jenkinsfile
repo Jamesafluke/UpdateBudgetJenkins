@@ -15,6 +15,11 @@ pipeline{
                 sh pwd
             }
         }
+        stage('hello'){
+            steps{
+                sh "echo 'hello from the final stage'"
+            }
+        }
 
     }
 }

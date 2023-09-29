@@ -11,6 +11,7 @@ pipeline{
         stage('unitTests'){
             steps{
                 sh pwd
+                sh pwd
             }
         }
 

@@ -13,7 +13,7 @@ pipeline{
                 sh "whoami"
                 sh "pwd"
                 pwsh "Get-Host"
-                powershell "Write-Host 'Testing powershell'"
+                // powershell "Write-Host 'Testing powershell'"
             }
         }
     }

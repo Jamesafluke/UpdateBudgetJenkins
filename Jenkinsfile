@@ -12,6 +12,7 @@ pipeline{
             steps{
                 sh "whoami"
                 sh "pwd"
+                powershell "Write-Host 'Testing powershell'"
             }
         }
     }

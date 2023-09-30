@@ -10,10 +10,8 @@ pipeline{
         }
         stage('unitTests'){
             steps{
-                sh "whoami"
-                sh "pwd"
                 pwsh "Get-Host"
-                // powershell "Write-Host 'Testing powershell'"
+                pwsh ./UnitTests/hello.ps1
             }
         }
     }

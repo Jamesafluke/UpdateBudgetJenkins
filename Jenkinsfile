@@ -11,7 +11,7 @@ pipeline{
         stage('unitTests'){
             steps{
                 pwsh "Get-Host"
-                pwsh ./UnitTests/hello.ps1
+                pwsh ./hello.ps1
             }
         }
     }

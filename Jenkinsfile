@@ -12,7 +12,7 @@ pipeline{
             steps{
                 // sh('''test.sh''')
                 pwsh "Get-Host" //Works fine.
-                sh('''pwsh "hello.ps1"""")
+                sh('''pwsh "hello.ps1"''')
             }
         }
     }

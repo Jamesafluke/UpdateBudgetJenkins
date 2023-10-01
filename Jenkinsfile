@@ -10,10 +10,8 @@ pipeline{
         }
         stage('unitTests'){
             steps{
-                // sh('''test.sh''')
-                pwsh "Get-Host" //Works fine.
-                // sh('''pwsh "hello.ps1"''') //Works fine.
-                powershell hello.ps1
+                sh('''pwsh "hello.ps1"''') //Works fine.
+                sh('''pwsh ")
             }
         }
     }

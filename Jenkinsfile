@@ -10,7 +10,7 @@ pipeline{
         }
         stage('unitTests'){
             steps{
-                sh "test.sh"
+                sh('''test.sh''')
                 pwsh "Get-Host" //Works fine.
                 // pwsh "hello.ps1"
             }

@@ -11,17 +11,8 @@ pipeline{
         stage('unitTests'){
             steps{
                 pwsh "Get-Host"
-                pwsh ./hello.ps1
+                pwsh hello.ps1
             }
         }
     }
 }
-
-
-
-
-// stage('checkout'){
-//             steps {
-//                 checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/jenkinsci/generic-webhook-trigger-plugin.git']])
-//             }
-//         }

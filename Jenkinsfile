@@ -11,7 +11,6 @@ pipeline{
         stage('unitTests'){
             steps{
                 sh('''pwsh "hello.ps1"''') //Works fine.
-                sh('''pwsh ")
             }
         }
     }

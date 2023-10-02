@@ -11,7 +11,7 @@ pipeline{
         stage('unitTests'){
             steps{
                 // sh('''pwsh "hello.ps1"''') //Works fine.
-                sh cd 'UnitTests'
+                sh 'cd UnitTests'
                 sh('''pwsh "DeduplicateUnitTest.ps1"''')
             }
         }

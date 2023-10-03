@@ -10,8 +10,14 @@ pipeline{
         }
         stage('unitTests'){
             steps{
-                dir('UnitTests'){
+                dir('UnitTests/DeduplicateUnitTest'){
                     sh('''pwsh "DeduplicateUnitTest.ps1"''')
+                }
+                dir('UnitTests/ArbitraryExceptionsUnitTest'){
+                    sh('''pwsh "ArbitraryExceptionsUnitTest.ps1"''')
+                }
+                dir('UnitTests/DetermineMethodUnitTest'){
+                    sh('''pwsh "DetermineMethodUnitTest.ps1"''')
                 }
             }
         }

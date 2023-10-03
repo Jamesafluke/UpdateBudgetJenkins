@@ -12,6 +12,7 @@ pipeline{
             steps{
                 // sh('''pwsh "hello.ps1"''') //Works fine.
                 sh 'cd UnitTests'
+                sh 'pwd'
                 sh('''pwsh "DeduplicateUnitTest.ps1"''')
             }
         }

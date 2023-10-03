@@ -10,7 +10,7 @@ pipeline{
         }
         stage('unitTests'){
             steps{
-                dir(UnitTests){
+                dir('UnitTests'){
                     sh 'pwd'
                     sh('''pwsh "DeduplicateUnitTest.ps1"''')
                 }
